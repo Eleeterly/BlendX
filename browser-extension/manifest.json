@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "BlendX",
+  "version": "1.1.0",
+  "description": "One-click import of Sketchfab models directly into Blender",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://sketchfab.com/*",
+    "https://api.sketchfab.com/*",
+    "http://localhost:7432/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://sketchfab.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Sketchfab → Blender"
+  },
+  "icons": {
+    "16":  "icon.png",
+    "48":  "icon.png",
+    "128": "icon.png"
+  }
+}

@@ -1,0 +1,4 @@
+This folder should contain icon.png (48x48 or 128x128 Blender-orange icon).
+You can use any .png image renamed to icon.png, or generate one at:
+https://favicon.io/favicon-generator/
+(Use background color #E87D0D, letter "B", white text)
